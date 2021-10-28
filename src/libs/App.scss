@@ -1,0 +1,52 @@
+@import "./Form.scss";
+@import "./TodoItem.scss";
+@import "./Navbar.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #e1b382;
+  position: relative;
+
+  ::-webkit-scrollbar {
+    width: 15px; /* ширина для вертикального скролла */
+    background-color: #123462;
+    border-radius: 5px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: #843465;
+    border-radius: 5px;
+    box-shadow: inset 1px 1px 10px #f3faf7;
+  }
+
+  h1 {
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    font-size: 70px;
+  }
+}
+
+.App {
+  width: 400px;
+  height: 700px;
+  margin: 0 auto;
+  border-radius: 5px;
+  background: #12343b;
+  box-shadow: 2px 2px 30px #000;
+  margin-top: 10px;
+  cursor: pointer;
+
+  .todos_container {
+    padding: 20px;
+
+    overflow-y: auto;
+    max-height: 600px;
+  }
+}

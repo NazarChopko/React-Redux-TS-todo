@@ -1,0 +1,41 @@
+.container_todoItem {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 15px;
+  padding: 2px;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  font-size: 20px;
+  overflow: hidden;
+  border: 1px solid white;
+  border-radius: 3px;
+
+  .container_todoItem_title {
+    width: 65%;
+    word-wrap: break-word;
+    padding-left: 5px;
+  }
+
+  .container_todoItem_title_completed {
+    text-decoration: line-through red;
+    width: 65%;
+    word-wrap: break-word;
+    padding-left: 5px;
+  }
+
+  span {
+    display: inline-block;
+    margin-right: 6px;
+    cursor: pointer;
+  }
+  .delete {
+    fill: red;
+  }
+  .edit {
+    fill: white;
+  }
+  .completed {
+    fill: green;
+  }
+}
